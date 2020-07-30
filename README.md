@@ -27,3 +27,4 @@ wangbaoming, wangbaoming@log56.com
 ## License
 
 BCategoryKit is available under the MIT license. See the LICENSE file for more info.
+# BCategoryKit
