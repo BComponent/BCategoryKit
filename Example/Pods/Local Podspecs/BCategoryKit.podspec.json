@@ -1,0 +1,22 @@
+{
+  "name": "BCategoryKit",
+  "version": "0.1.0",
+  "summary": "A short description of BCategoryKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wangbaoming/BCategoryKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wangbaoming": "wangbaoming@log56.com"
+  },
+  "source": {
+    "git": "https://github.com/wangbaoming/BCategoryKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BCategoryKit/Classes/**/*"
+}

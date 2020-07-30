@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09D33C8525C1A728462A9251 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3899C75419F51627B6FCBF72 /* BCategoryKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BCategoryKit.podspec; path = ../BCategoryKit.podspec; sourceTree = "<group>"; };
+		09D33C8525C1A728462A9251 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3899C75419F51627B6FCBF72 /* BCategoryKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BCategoryKit.podspec; path = ../BCategoryKit.podspec; sourceTree = "<group>"; };
 		4A7C86B8EBDE49EF26A947E8 /* Pods-BCategoryKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCategoryKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-BCategoryKit_Example/Pods-BCategoryKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BCategoryKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCategoryKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		C888E57DBE2DB8DA3A792CB5 /* Pods_BCategoryKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BCategoryKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5C9E7C0ACBEB8AC7C7AD5C /* Pods-BCategoryKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCategoryKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BCategoryKit_Tests/Pods-BCategoryKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1FAAE1435C9AB028662F47C /* Pods_BCategoryKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BCategoryKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4D2BAF03657A11F3C01CE62 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F4D2BAF03657A11F3C01CE62 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				DE5C9E7C0ACBEB8AC7C7AD5C /* Pods-BCategoryKit_Tests.debug.xcconfig */,
 				62F82FF130385743DC857591 /* Pods-BCategoryKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = wangbaoming;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = ULNFL5C546;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,6 +497,7 @@
 			baseConfigurationReference = 4A7C86B8EBDE49EF26A947E8 /* Pods-BCategoryKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ULNFL5C546;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BCategoryKit/BCategoryKit-Prefix.pch";
 				INFOPLIST_FILE = "BCategoryKit/BCategoryKit-Info.plist";
@@ -510,6 +514,7 @@
 			baseConfigurationReference = 884F596301807E5D918F1153 /* Pods-BCategoryKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ULNFL5C546;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BCategoryKit/BCategoryKit-Prefix.pch";
 				INFOPLIST_FILE = "BCategoryKit/BCategoryKit-Info.plist";

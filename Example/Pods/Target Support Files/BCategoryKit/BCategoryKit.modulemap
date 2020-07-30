@@ -1,0 +1,6 @@
+framework module BCategoryKit {
+  umbrella header "BCategoryKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
