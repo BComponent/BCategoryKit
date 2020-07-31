@@ -10,6 +10,11 @@
 #endif
 #endif
 
+#import "SWQRCode.h"
+#import "SWQRCodeConfig.h"
+#import "SWQRCodeManager.h"
+#import "SWQRCodeViewController.h"
+#import "SWScannerView.h"
 
 FOUNDATION_EXPORT double BCategoryKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char BCategoryKitVersionString[];

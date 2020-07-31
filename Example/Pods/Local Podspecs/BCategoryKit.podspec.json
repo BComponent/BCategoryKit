@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of BCategoryKit.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/wangbaoming/BCategoryKit",
+  "homepage": "https://github.com/BComponent/BCategoryKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "wangbaoming": "wangbaoming@log56.com"
   },
   "source": {
-    "git": "https://github.com/wangbaoming/BCategoryKit.git",
+    "git": "https://github.com/BComponent/BCategoryKit",
     "tag": "0.1.0"
   },
   "platforms": {
