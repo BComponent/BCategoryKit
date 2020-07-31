@@ -38,6 +38,9 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'BCategoryKit' => ['BCategoryKit/Assets/*.png']
   # }
+  s.resource_bundles = {
+    'BCategoryKit' => ['BCategoryKit/SWQRCode/*.bundle']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
