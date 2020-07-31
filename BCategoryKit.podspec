@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   #组件名
   s.name             = 'BCategoryKit'
   #版本号
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   #描述
   s.summary          = 'A short description of BCategoryKit.'
 
