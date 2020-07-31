@@ -35,12 +35,12 @@ TODO: Add long description of the pod here.
 #组件资源文件路径
   s.source_files = 'BCategoryKit/Classes/**/*'
   #组件资源bundle路径
-  # s.resource_bundles = {
-  #   'BCategoryKit' => ['BCategoryKit/Assets/*.png']
-  # }
-  s.resource_bundles = {
-    'BCategoryKit' => ['BCategoryKit/SWQRCode/*.bundle']
-  }
+  #图片直接放在Asset目录下就用BCategoryKit/Assets/*
+  #图片在Asset目录下有新建了一层目录Reources就用BCategoryKit/Assets/**/*
+   s.resource_bundles = {
+     'BCategoryKit' => ['BCategoryKit/Assets/*']
+   }
+
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

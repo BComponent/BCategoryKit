@@ -240,10 +240,15 @@ static char FLASHLIGHT_ON;  /** 手电筒开关状态绑定标识符 */
 - (UIImageView *)scannerLine {
     if (!_scannerLine) {
         _scannerLine = [[UIImageView alloc]initWithFrame:CGRectMake(Scanner_X, Scanner_Y, Scanner_Width, Scanner_LineHeight)];
-        NSString *filePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"SWQRCode.bundle/ScannerLine.png"];
-        UIImage *image = [UIImage imageWithContentsOfFile:filePath];
-//        UIImage *image = [UIImage imageWithContentsOfFile:filePath];
-        _scannerLine.image = [UIImage imageNamed:@"SWQRCode.bundle/ScannerLine"];
+//        NSString *filePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"BCategoryKit/BBRCodeConfig/SWQRCode.bundle/ScannerLine@2x.png"];
+        
+        NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+        //如果文件夹没有放。bundle这一层就够了
+        NSBundle * bunle1 = [NSBundle bundleWithPath:[currentBundle pathForResource:@"BCategoryKit" ofType:@"bundle"]];
+        //如果文件夹放了bundle要解析第二层
+        NSBundle * bunle2  = [NSBundle bundleWithPath:[bunle1 pathForResource:@"SWQRCode" ofType:@"bundle"]];
+        UIImage * image = [UIImage imageWithContentsOfFile:[bunle2 pathForResource:@"ScannerLine@2x" ofType:@".png"]];
+        _scannerLine.image = image;
     }
     return _scannerLine;
 }
