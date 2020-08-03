@@ -43,36 +43,47 @@ BCategoryKit is available under the MIT license. See the LICENSE file for more i
 
 ### 索引库
 1、组织目录（BComponent）下，新建目录（BSpecs）作为索引库
-2、[创建过程选中public、README文件、.gitignore(选oc)](https://upload-images.jianshu.io/upload_images/2470124-8d1b930d150a5b9e.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)
+2、创建过程选中public、README文件、.gitignore(选oc)
+[![创建过程选中public、README文件、.gitignore(选oc)](https://upload-images.jianshu.io/upload_images/2470124-8d1b930d150a5b9e.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
 3、创建本地索引库
-1）、[打开终端 pod repo 查看一下当前有哪些本地索引库（如果你之前没有创建过，应该只有一个master](https://upload-images.jianshu.io/upload_images/2470124-19cd6ced28bfedbd.png?imageMogr2/auto-orient/strip|imageView2/2/w/816)
+1）、打开终端 pod repo 查看一下当前有哪些本地索引库（如果你之前没有创建过，应该只有一个master[![pod repo](https://upload-images.jianshu.io/upload_images/2470124-19cd6ced28bfedbd.png?imageMogr2/auto-orient/strip|imageView2/2/w/816)](https://www.jianshu.com/p/760d6cd46719)
 ```
 pod repo
 ```
-2)、[通过pod repo add <本地索引库的名字>  <远程索引库的地址> ，创建本地索引库并和远程索引库做关联（注：本地索引库的名字建议和远程索引库起的名字一样）](https://upload-images.jianshu.io/upload_images/2470124-3426faffcc634720.png?imageMogr2/auto-orient/strip|imageView2/2/w/1104)
+2)、
+通过pod repo add <本地索引库的名字>  <远程索引库的地址> ，创建本地索引库并和远程索引库做关联（注：本地索引库的名字建议和远程索引库起的名字一样）
+[![本地索引库并和远程索引库做关联](https://upload-images.jianshu.io/upload_images/2470124-3426faffcc634720.png?imageMogr2/auto-orient/strip|imageView2/2/w/1104)](https://www.jianshu.com/p/760d6cd46719)
 
 ```
 pod repo add BSpecs https://github.com/BComponent/BSpecs.git
 ```
-3、[通过下面的方式可以查看本地索引库的物理地址](https://upload-images.jianshu.io/upload_images/2470124-7b0245fd840089e8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)
+3、
+通过下面的方式可以查看本地索引库的物理地址
+[![查看本地索引库的物理地址](https://upload-images.jianshu.io/upload_images/2470124-7b0245fd840089e8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
 
 ### 远程代码库
-[创建远程代码仓库（和创建远程索引库的方式一样），创建一个BCategoryKit的远程代码库，用来存放BCategory组件的代码。同样获取到benbenFFCategoryKit组件的远程代码库地址](https://upload-images.jianshu.io/upload_images/2470124-2281f90179749ccd.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)
+创建远程代码仓库（和创建远程索引库的方式一样），创建一个BCategoryKit的远程代码库，用来存放BCategory组件的代码。同样获取到benbenFFCategoryKit组件的远程代码库地址
+[![创建远程代码仓库](https://upload-images.jianshu.io/upload_images/2470124-2281f90179749ccd.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
 
 1、本地代码库
-1）、[pod lib create <组件名>  创建本地代码组件模版库（根据自身需求对下面的提示信息做选择就好）](https://upload-images.jianshu.io/upload_images/2470124-e8e386b2c6723e1c.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)
+1）、pod lib create <组件名>  创建本地代码组件模版库（根据自身需求对下面的提示信息做选择就好）
+[![创建本地代码组件模版库（](https://upload-images.jianshu.io/upload_images/2470124-e8e386b2c6723e1c.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
 ```
 pod lib create BCategoryKit
 ``` 
-2）、[编译运行通过看下效果。接着把组件代码文件夹拖入到组件BCategoryKit的classes路径下。](https://upload-images.jianshu.io/upload_images/2470124-75b79961043a0156.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)
+2）、编译运行通过看下效果。接着把组件代码文件夹拖入到组件BCategoryKit的classes路径下。
+[![组件代码文件夹拖入到组件BCategoryKit的classes路径下。](https://upload-images.jianshu.io/upload_images/2470124-75b79961043a0156.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
 
-3）、[组件的图片资源放到Assets文件夹中，可以使图片可以是.bundle文件，这里注意图片的读取方式和podspec文件配置路径也要做响应改变，具体请看组件图片资源配置](https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170、https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170)
+3）、组件的图片资源放到Assets文件夹中，可以使图片可以是.bundle文件，这里注意图片的读取方式和podspec文件配置路径也要做响应改变，具体请看组件图片资源配置
+[![组件图片资源配置](https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170、https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170)](https://www.jianshu.com/p/760d6cd46719)
 
 
 
-4）、[ 接着cd到Example下进行pod install （把刚才拖入到classes里的文件夹pod进来）](https://upload-images.jianshu.io/upload_images/2470124-8567af6b27766ad4.png?imageMogr2/auto-orient/strip|imageView2/2/w/1126)
+4）、接着cd到Example下进行pod install （把刚才拖入到classes里的文件夹pod进来）
+[![ pod install](https://upload-images.jianshu.io/upload_images/2470124-8567af6b27766ad4.png?imageMogr2/auto-orient/strip|imageView2/2/w/1126)](https://www.jianshu.com/p/760d6cd46719)
 
-5)、[编译组件看是否报错，编译通过后需要修改podspecs索引文件，一般需要修改下面几个问题。](https://upload-images.jianshu.io/upload_images/2470124-c2816d8ecfd75e7a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200、https://upload-images.jianshu.io/upload_images/2470124-d5972be616fa47d8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)
+5)、编译组件看是否报错，编译通过后需要修改podspecs索引文件，一般需要修改下面几个问题。
+[![修改podspecs索引文件](https://upload-images.jianshu.io/upload_images/2470124-c2816d8ecfd75e7a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200、https://upload-images.jianshu.io/upload_images/2470124-d5972be616fa47d8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
 
 a. 修改版本号
 
@@ -82,8 +93,9 @@ c. 修改homepage和source地址
 
 d. 添加依赖库
 
-6）、[编译运行通过后，提交组件到远程代码库并打tag](https://upload-images.jianshu.io/upload_images/2470124-549c8d698095a727.png?imageMogr2/auto-orient/strip|imageView2/2/w/1136
-)
+6）、编译运行通过后，提交组件到远程代码库并打tag
+[![打tag](https://upload-images.jianshu.io/upload_images/2470124-549c8d698095a727.png?imageMogr2/auto-orient/strip|imageView2/2/w/1136)](https://www.jianshu.com/p/760d6cd46719)
+
 ```
 -  git add .
 
@@ -115,8 +127,8 @@ d. 添加依赖库
 ```
 pod repo push BSpecs BCategoryKit.podspec - -verbose - -allow-warnings
 ```
-
-[本地也可以查看已成功](https://upload-images.jianshu.io/upload_images/2470124-670ef6b39026bd2c.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)
+本地也可以查看已成功
+[![本地也可以查看已成功](https://upload-images.jianshu.io/upload_images/2470124-670ef6b39026bd2c.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
 
 9）、在需要应用改组件的工程podfile文件中pod  BCategoryKit
 ```
@@ -126,7 +138,8 @@ source 'xxxxx'
 pod 'BCategoryKit'
 
 ```
-[![查看组件远程地址 pod repo](https://upload-images.jianshu.io/upload_images/2470124-9fbd94fd493bc02b.png?imageMogr2/auto-orient/strip|imageView2/2/w/1066)](https://upload-images.jianshu.io/upload_images/2470124-9fbd94fd493bc02b.png?imageMogr2/auto-orient/strip|imageView2/2/w/1066)
+查看组件远程地址 pod repo
+[![pod repo](https://upload-images.jianshu.io/upload_images/2470124-9fbd94fd493bc02b.png?imageMogr2/auto-orient/strip|imageView2/2/w/1066)](https://www.jianshu.com/p/760d6cd46719)
 ```
 pod repo
 ```
