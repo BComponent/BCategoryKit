@@ -145,3 +145,61 @@ pod repo
 ```
 
 # 组件图片配置
+## 图片存放位置和对于podspec配置
+1、在组件化时，对于图片资源，我们需要把对应组件的图片资源放到对应组件如下位置
+[![](https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170)]()
+
+这里有个注意的地方：
+
+在上图Assets目录下是直接把相关图片导入进来还是在Assets下新建一个文件夹，再把图片导入到该文件夹，取决于podspec文件的下图位置：
+
+[![](https://upload-images.jianshu.io/upload_images/5720820-c1ad734417244535.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)]()
+对应下图
+
+[![](https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170)]()
+
+[![](https://upload-images.jianshu.io/upload_images/5720820-bf07bb7b4f000b04.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)]()
+对应下图
+
+[![](https://upload-images.jianshu.io/upload_images/5720820-270bdab67418af55.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)]()
+
+总的来说，步骤就是
+
+把图片资源放到Assets目录下
+修改podspec文件
+cd到example下，pod install把图片导入测试项目中，效果如图：
+
+
+[![](https://upload-images.jianshu.io/upload_images/5720820-43da62eafc60314c.png?imageMogr2/auto-orient/strip|imageView2/2/w/438)]()
+
+
+注意：
+
+显示图片如果使用如下方式的话，是不能正常显示图片的
+
+```
+ [UIImage imageNamed:@"Group@%2x.png"];
+```
+
+原因是这种方式默认是从mainBundle中去加载图片，然而组件化之后，图片已经不再mainBundle中了，实际是在对应组件下的bundle 里面。
+
+解决办法：
+```
+NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+//图片名称要写全称
+NSString *patch = [currentBundle pathForResource:@"Group.png" ofType:nil inDirectory:@"BCategoryKit.bundle"];
+_imgView.image = [UIImage imageWithContentsOfFile:patch];
+
+```
+
+如果Assets目录下放的不知图片，而是图片合集文件.bundle文件，加载路径如下：
+```
+NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+//如果文件夹没有放。bundle这一层就够了
+NSBundle * kitBundle = [NSBundle bundleWithPath:[currentBundle pathForResource:@"<#BCategoryKit(组件名称)#>" ofType:@"bundle"]];
+//如果文件夹放了bundle要解析第二层
+NSBundle * imgBundle  = [NSBundle bundleWithPath:[kitBundle pathForResource:@"<#bundle名称#>" ofType:@"bundle"]];
+UIImage * image = [UIImage imageWithContentsOfFile:[imgBundle pathForResource:@"<#完整的图片名称#>" ofType:@".png"]];
+```
+
+
