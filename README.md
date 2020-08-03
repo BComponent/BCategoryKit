@@ -126,10 +126,9 @@ source 'xxxxx'
 pod 'BCategoryKit'
 
 ```
-[查看组件远程地址 pod repo](https://upload-images.jianshu.io/upload_images/2470124-9fbd94fd493bc02b.png?imageMogr2/auto-orient/strip|imageView2/2/w/1066)
+[![查看组件远程地址 pod repo](https://upload-images.jianshu.io/upload_images/2470124-9fbd94fd493bc02b.png?imageMogr2/auto-orient/strip|imageView2/2/w/1066)](https://upload-images.jianshu.io/upload_images/2470124-9fbd94fd493bc02b.png?imageMogr2/auto-orient/strip|imageView2/2/w/1066)
 ```
 pod repo
 ```
 
 # 组件图片配置
-
