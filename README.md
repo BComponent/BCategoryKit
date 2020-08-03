@@ -147,21 +147,21 @@ pod repo
 # 组件图片配置
 ## 图片存放位置和对于podspec配置
 1、在组件化时，对于图片资源，我们需要把对应组件的图片资源放到对应组件如下位置
-[![](https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170)]()
+[![Assets](https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170)](https://www.jianshu.com/p/66da0b4585c3)
 
 这里有个注意的地方：
 
 在上图Assets目录下是直接把相关图片导入进来还是在Assets下新建一个文件夹，再把图片导入到该文件夹，取决于podspec文件的下图位置：
 
-[![](https://upload-images.jianshu.io/upload_images/5720820-c1ad734417244535.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)]()
+[![Assets](https://upload-images.jianshu.io/upload_images/5720820-c1ad734417244535.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/66da0b4585c3)
 对应下图
 
-[![](https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170)]()
+[![podspec](https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170)](https://www.jianshu.com/p/66da0b4585c3)
 
-[![](https://upload-images.jianshu.io/upload_images/5720820-bf07bb7b4f000b04.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)]()
+[![Assets](https://upload-images.jianshu.io/upload_images/5720820-bf07bb7b4f000b04.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/66da0b4585c3)
 对应下图
 
-[![](https://upload-images.jianshu.io/upload_images/5720820-270bdab67418af55.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)]()
+[![podspec](https://upload-images.jianshu.io/upload_images/5720820-270bdab67418af55.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/66da0b4585c3)
 
 总的来说，步骤就是
 
@@ -170,7 +170,7 @@ pod repo
 cd到example下，pod install把图片导入测试项目中，效果如图：
 
 
-[![](https://upload-images.jianshu.io/upload_images/5720820-43da62eafc60314c.png?imageMogr2/auto-orient/strip|imageView2/2/w/438)]()
+[![pod](https://upload-images.jianshu.io/upload_images/5720820-43da62eafc60314c.png?imageMogr2/auto-orient/strip|imageView2/2/w/438)](https://www.jianshu.com/p/66da0b4585c3)
 
 
 注意：
