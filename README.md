@@ -83,7 +83,7 @@ pod lib create BCategoryKit
 [![ pod install](https://upload-images.jianshu.io/upload_images/2470124-8567af6b27766ad4.png?imageMogr2/auto-orient/strip|imageView2/2/w/1126)](https://www.jianshu.com/p/760d6cd46719)
 
 5)、编译组件看是否报错，编译通过后需要修改podspecs索引文件，一般需要修改下面几个问题。
-[![修改podspecs索引文件](https://upload-images.jianshu.io/upload_images/2470124-c2816d8ecfd75e7a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200、https://upload-images.jianshu.io/upload_images/2470124-d5972be616fa47d8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
+[![修改podspecs索引文件]([https://upload-images.jianshu.io/upload_images/2470124-c2816d8ecfd75e7a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200]、[https://upload-images.jianshu.io/upload_images/2470124-d5972be616fa47d8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200])](https://www.jianshu.com/p/760d6cd46719)
 
 a. 修改版本号
 
