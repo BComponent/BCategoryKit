@@ -75,7 +75,8 @@ pod lib create BCategoryKit
 [![组件代码文件夹拖入到组件BCategoryKit的classes路径下。](https://upload-images.jianshu.io/upload_images/2470124-75b79961043a0156.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
 
 3）、组件的图片资源放到Assets文件夹中，可以使图片可以是.bundle文件，这里注意图片的读取方式和podspec文件配置路径也要做响应改变，具体请看组件图片资源配置
-[![组件图片资源配置](https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170、https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170)](https://www.jianshu.com/p/760d6cd46719)
+[![组件图片资源配置](https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170)](https://www.jianshu.com/p/760d6cd46719)
+[组件图片资源配置](https://upload-images.jianshu.io/upload_images/5720820-955a649259a012f6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1170)](https://www.jianshu.com/p/760d6cd46719)
 
 
 
@@ -83,7 +84,8 @@ pod lib create BCategoryKit
 [![ pod install](https://upload-images.jianshu.io/upload_images/2470124-8567af6b27766ad4.png?imageMogr2/auto-orient/strip|imageView2/2/w/1126)](https://www.jianshu.com/p/760d6cd46719)
 
 5)、编译组件看是否报错，编译通过后需要修改podspecs索引文件，一般需要修改下面几个问题。
-[![修改podspecs索引文件]([https://upload-images.jianshu.io/upload_images/2470124-c2816d8ecfd75e7a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200]、[https://upload-images.jianshu.io/upload_images/2470124-d5972be616fa47d8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200])](https://www.jianshu.com/p/760d6cd46719)
+[![修改podspecs索引文件](https://upload-images.jianshu.io/upload_images/2470124-c2816d8ecfd75e7a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
+[![修改podspecs索引文件](https://upload-images.jianshu.io/upload_images/2470124-d5972be616fa47d8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
 
 a. 修改版本号
 
