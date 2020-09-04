@@ -118,14 +118,10 @@ d. 添加依赖库
 
 直接通过pod spec lint --verbose --allow-warnings 命令验证podspec索引文件（既验证本地同时验证远程的podspec）
 
-作者：JiaJung
-链接：https://www.jianshu.com/p/760d6cd46719
-来源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-8）、验证通过后，pod repo push <本地索引库> <索引文件> - -verbose - -allow-warnings 提交索引文件到远程索引库
+8）、验证通过后，pod repo push <本地索引库> <索引文件> --verbose --allow-warnings 提交索引文件到远程索引库
 
 ```
-pod repo push BSpecs BCategoryKit.podspec - -verbose - -allow-warnings
+pod repo push BSpecs BCategoryKit.podspec --verbose --allow-warnings
 ```
 本地也可以查看已成功
 [![本地也可以查看已成功](https://upload-images.jianshu.io/upload_images/2470124-670ef6b39026bd2c.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
