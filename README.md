@@ -61,7 +61,7 @@ pod repo add BSpecs https://github.com/BComponent/BSpecs.git
 通过下面的方式可以查看本地索引库的物理地址
 [![查看本地索引库的物理地址](https://upload-images.jianshu.io/upload_images/2470124-7b0245fd840089e8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
 
-### 远程代码库
+### 远程代码库(组件库)
 创建远程代码仓库（和创建远程索引库的方式一样），创建一个BCategoryKit的远程代码库，用来存放BCategory组件的代码。同样获取到benbenFFCategoryKit组件的远程代码库地址
 [![创建远程代码仓库](https://upload-images.jianshu.io/upload_images/2470124-2281f90179749ccd.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
 
@@ -86,6 +86,22 @@ pod lib create BCategoryKit
 5)、编译组件看是否报错，编译通过后需要修改podspecs索引文件，一般需要修改下面几个问题。
 [![修改podspecs索引文件](https://upload-images.jianshu.io/upload_images/2470124-c2816d8ecfd75e7a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
 [![修改podspecs索引文件](https://upload-images.jianshu.io/upload_images/2470124-d5972be616fa47d8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
+
+注意：如果一个组件目录中有多个组件时文件添加方法如下
+
+```
+s.subspec 'LGSafeObject' do |ext|
+  ext.source_files = 'MSKit/Classes/LGSafeObject/*.{h,m}'
+end
+s.subspec 'LGCrashLog' do |ext|
+  ext.source_files = 'MSKit/Classes/LGCrashLog/*.{h,m}'
+  ext.requires_arc = false
+  ext.dependency 'MSKit/LGSafeObject'
+  ext.dependency 'YTKKeyValueStore'
+  ext.dependency 'FMDB'
+end
+
+``` 
 
 a. 修改版本号
 
