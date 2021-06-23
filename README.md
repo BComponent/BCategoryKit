@@ -90,6 +90,7 @@ pod lib create BCategoryKit
 注意：如果一个组件目录中有多个组件时文件添加方法如下
 
 ```
+
 s.subspec 'LGSafeObject' do |ext|
   ext.source_files = 'MSKit/Classes/LGSafeObject/*.{h,m}'
 end
@@ -101,6 +102,10 @@ s.subspec 'LGCrashLog' do |ext|
   ext.dependency 'FMDB'
 end
 
+本地Podfile文件添加路径
+pod 'MSKit/LGSafeObject', :path => '../'
+远程Podfile
+pod 'MSKit/LGSafeObject'
 ``` 
 
 a. 修改版本号
@@ -143,6 +148,14 @@ pod repo push BSpecs BCategoryKit.podspec --verbose --allow-warnings
 ```
 本地也可以查看已成功
 [![本地也可以查看已成功](https://upload-images.jianshu.io/upload_images/2470124-670ef6b39026bd2c.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200)](https://www.jianshu.com/p/760d6cd46719)
+
+如果组件是其他人提交自己也需要更新本地索引库
+这个时候我们远程索引库已经完成，我们需要更新我们本地索引库 可以使用命名：
+```
+pod repo update （这个命令会更新repo 文件夹所有的索引库 可能很慢 推荐指定更新哪个使用 ：pod repo update  ~/.cocoapods/repos/BSpecs/）
+
+```
+
 
 9）、在需要应用改组件的工程podfile文件中pod  BCategoryKit
 ```
