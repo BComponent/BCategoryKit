@@ -133,6 +133,8 @@ d. 添加依赖库
 - git push --tags
 
 ```
+
+从这开始cd到FFCategoryKit.podspec文件所在的FFCategoryKit 目录
 7）、接下来可以验证podspec索引文件是否正确
 
 首先，通过pod lib lint FFCategoryKit.podspec --verbose --allow-warnings 验证本地索引文件是否正确
